@@ -1,0 +1,118 @@
+<h1>Estados atuais do R.O.B.O:</h1>
+<br />
+<table>
+    <tr>
+        <th colspan="2">
+            Cabeça
+        </th>
+        <th colspan="4">
+            Braços
+        </th>
+    </tr>
+    <tr>
+        <!-- Cabeça -->
+        <th colspan="2">
+            -
+        </th>
+        <th colspan="2">
+            Braço esquerdo
+        </th>
+        <th colspan="2">
+            Braço direito
+        </th>
+    </tr>
+    <tr>
+        <!-- Cabeça -->
+        <th>Rotação</th>
+        <th>Inclinação</th>
+        <!-- Braço Esquerdo -->
+        <th>Cotovelo</th>
+        <th>Pulso</th>
+        <!-- Braço Direito -->
+        <th>Cotovelo</th>
+        <th>Pulso</th>
+    </tr>
+    <tr>
+        <!-- Cabeça -->
+        <td>{{ this.estadosRobo.cabeca.rotacao }}. {{ this.estadosRobo.cabeca.rotacaoDesc }}</td>
+        <td>{{ this.estadosRobo.cabeca.inclinacao }}. {{ this.estadosRobo.cabeca.inclinacaoDesc }}</td>
+        <!-- Braço Esquerdo -->
+        <td>{{ this.estadosRobo.bracoEsquerdo.cotovelo }}. {{ this.estadosRobo.bracoEsquerdo.cotoveloDesc }}</td>
+        <td>{{ this.estadosRobo.bracoEsquerdo.pulso }}. {{ this.estadosRobo.bracoEsquerdo.pulsoDesc }}</td>
+        <!-- Braço Direito -->
+        <td>{{ this.estadosRobo.bracoDireito.cotovelo }}. {{ this.estadosRobo.bracoDireito.cotoveloDesc }}</td>
+        <td>{{ this.estadosRobo.bracoDireito.pulso }}. {{ this.estadosRobo.bracoDireito.pulsoDesc }}</td>
+    </tr>
+</table>
+<br />
+<hr />
+<h1>Alterar estados do R.O.B.O:</h1>
+<br />
+<table>
+    <tr>
+        <th colspan="2">
+            Cabeça
+        </th>
+        <th colspan="4">
+            Braços
+        </th>
+    </tr>
+    <tr>
+        <!-- Cabeça -->
+        <th colspan="2">
+            -
+        </th>
+        <th colspan="2">
+            Braço esquerdo
+        </th>
+        <th colspan="2">
+            Braço direito
+        </th>
+    </tr>
+    <tr>
+        <!-- Cabeça -->
+        <th>Rotação</th>
+        <th>Inclinação</th>
+        <!-- Braço Esquerdo -->
+        <th>Cotovelo</th>
+        <th>Pulso</th>
+        <!-- Braço Direito -->
+        <th>Cotovelo</th>
+        <th>Pulso</th>
+    </tr>
+    <tr>
+        <!-- Cabeça -->
+        <!-- Cabeça Rotação -->
+        <td>
+            <button class="mais" type="button" (click)="setEstadoRobo(this.membrosRobo.Cabeca, this.membrosRobo.CabecaRotacao, 1)"> + </button>
+            <button type="button" (click)="setEstadoRobo(this.membrosRobo.Cabeca, this.membrosRobo.CabecaRotacao, 2)"> - </button>
+        </td>
+        <!-- Cabeça Inclinação -->
+        <td>
+            <button class="mais" type="button" (click)="setEstadoRobo(this.membrosRobo.Cabeca, this.membrosRobo.CabecaInclinacao, 1)"> + </button>
+            <button type="button" (click)="setEstadoRobo(this.membrosRobo.Cabeca, this.membrosRobo.CabecaInclinacao, 2)"> - </button>
+        </td>
+        <!-- Braço Esquerdo -->
+        <!-- Braço Esquerdo Cotovelo -->
+        <td>
+            <button class="mais" type="button" (click)="setEstadoRobo(this.membrosRobo.BracoEsquerdo, this.membrosRobo.BracoEsquerdoCotovelo, 1)"> + </button>
+            <button type="button" (click)="setEstadoRobo(this.membrosRobo.BracoEsquerdo, this.membrosRobo.BracoEsquerdoCotovelo, 2)"> - </button>
+        </td>
+        <!-- Braço Esquerdo Pulso -->
+        <td>
+            <button class="mais" type="button" (click)="setEstadoRobo(this.membrosRobo.BracoEsquerdo, this.membrosRobo.BracoEsquerdoPulso, 1)"> + </button>
+            <button type="button" (click)="setEstadoRobo(this.membrosRobo.BracoEsquerdo, this.membrosRobo.BracoEsquerdoPulso, 2)"> - </button>
+        </td>
+        <!-- Braço Direito -->
+        <!-- Braço Direito Cotovelo -->
+        <td>
+            <button class="mais" type="button" (click)="setEstadoRobo(this.membrosRobo.BracoDireito, this.membrosRobo.BracoDireitoCotovelo, 1)"> + </button>
+            <button type="button" (click)="setEstadoRobo(this.membrosRobo.BracoDireito, this.membrosRobo.BracoDireitoCotovelo, 2)"> - </button>
+        </td>
+        <!-- Braço Direito Pulso -->
+        <td>
+            <button class="mais" type="button" (click)="setEstadoRobo(this.membrosRobo.BracoDireito, this.membrosRobo.BracoDireitoPulso, 1)"> + </button>
+            <button type="button" (click)="setEstadoRobo(this.membrosRobo.BracoDireito, this.membrosRobo.BracoDireitoPulso, 2)"> - </button>
+        </td>
+    </tr>
+</table>
