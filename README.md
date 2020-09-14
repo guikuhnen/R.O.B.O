@@ -1,6 +1,6 @@
 # R.O.B.O
 
-### Robô Operacional BinariamenteOrientado
+### Robô Operacional Binariamente Orientado
 
 Esse aplicativo possui um back-end em .NET Core 3.1 Web Api e o front-end em Angular 10.
 
